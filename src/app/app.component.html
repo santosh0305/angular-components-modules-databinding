@@ -1,0 +1,38 @@
+<div>
+Message : {{welcome}}
+</div>
+
+<div>
+Age : {{age}}
+</div>
+
+<div>
+  <img 
+    [src]=imageSource
+    [height]=imgHeight
+    [width]=imgWidth
+    alt="No-Image"
+  >
+</div>
+<div>
+  Age : 
+  <input 
+  type="text" 
+  [value]=age 
+  [placeholder]=placeholder >
+</div>
+<div>
+  <input 
+    type="button" 
+    value="Submit"
+    (click)=SubmitForm()  
+  >
+</div>
+
+<div>
+  Age : <input 
+    type="text" 
+    value=""
+    (change)=OnChange($event)
+  >
+</div>
